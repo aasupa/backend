@@ -20,11 +20,13 @@ Route::group(['namespace' => 'Api\V1'], function () {
          Route::get('recommended', 'ProductController@get_recommended_products');
          Route::get('vegetables', 'ProductController@get_vegetables');
           Route::get('test', 'ProductController@test_get_recommended_products');
+          Route::post('placeorder', 'OrderController@placeorder');
     }); 
     //registration and login
         Route::group(['prefix' => 'auth', 'namespace' => 'Auth'], function () {
         Route::post('register', 'CustomerAuthController@register');
         Route::post('login', 'CustomerAuthController@login');
+        
         });
    
         

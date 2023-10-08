@@ -16,8 +16,8 @@ class Order extends Model
         
         //'order_number',
         'user_id',
-        'transaction_id',
-        'order_amount',
+        'txn_id',
+        'txn_amount',
         'payment_status',
         'order_status',
         'delivery_address',
