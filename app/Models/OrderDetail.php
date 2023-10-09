@@ -10,13 +10,13 @@ class OrderDetail extends Model
     use HasFactory;
 
     protected $casts = [
-        'price' => 'float',
-        'discount_on_food' => 'float',
-        'total_add_on_price' => 'float',
-       // 'tax_amount' => 'float',
-        'food_id'=> 'integer',
-        'order_id'=> 'integer',
-        'quantity'=>'integer',
+        'price' => 'String',
+        'discount_on_food' => 'String',
+        'total_add_on_price' => 'String',
+        //'tax_amount' => 'String',
+        'food_id'=> 'String',
+        'order_id'=> 'String',
+        'quantity'=>'String',
     ];
 
     protected $primaryKey   = 'id';

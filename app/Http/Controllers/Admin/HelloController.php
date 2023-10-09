@@ -1,18 +1,15 @@
 <?php
-namespace App\Http\Controllers\Api\V1;
+
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\CentralLogics\Helpers;
-use App\Models\Food;
 use App\Models\Order;
-use App\Models\OrderDetail;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+use App\Models\User;
 
-
-class OrderController extends Controller
+class HelloController extends Controller
 {
-        public function placeorder(Request $request)
+    public function placeorder(Request $request)
     {
         // $validator = Validator::make($request->all(), [
         //     'order_amount' => 'required',
